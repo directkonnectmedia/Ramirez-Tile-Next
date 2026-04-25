@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl'
 
 import Navigation from '../components/navigation'
 import Footer from '../components/footer'
+import QuoteWizard from '../components/quote-wizard'
 
 const Home = (props) => {
   return (
@@ -408,55 +409,16 @@ const Home = (props) => {
         </section>
         <section id="contact" className="consultation-block">
           <div className="consultation-block__container">
-            <div className="consultation-block__grid">
-              <div className="consultation-block__visual">
-                <img
-                  alt="Subway tile shower with marble bench by Ramirez Tile"
-                  src="/gallery/15.jpg"
-                  className="consultation-block__img"
-                />
-              </div>
-              <div className="consultation-block__card">
-                <h2 className="section-title consultation-card__title">
-                  Schedule a Consultation
-                </h2>
-                <p className="section-content consultation-card__subhead">
-                  Mobile service throughout the Phoenix valley — by appointment.
-                </p>
-                <div className="consultation-info">
-                  <div className="consultation-info__item">
-                    <span className="consultation-info__label">PHONE</span>
-                    <a href="tel:+16024763358">
-                      <div className="consultation-info__value">
-                        <span>602-476-3358</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="consultation-info__item">
-                    <span className="consultation-info__label">
-                      SERVICE AREA
-                    </span>
-                    <p className="consultation-info__value-text">
-                      Phoenix, Surprise, Glendale, Peoria, Scottsdale, and
-                      surrounding cities.
-                    </p>
-                  </div>
-                  <div className="consultation-info__item">
-                    <span className="consultation-info__label">
-                      CONSULTATIONS
-                    </span>
-                    <p className="consultation-info__value-text">
-                      Monday–Saturday, by appointment.
-                    </p>
-                  </div>
-                </div>
-                <a href="/contact">
-                  <div className="btn btn-lg btn-accent consultation-card__cta">
-                    <span>REQUEST A QUOTE</span>
-                  </div>
-                </a>
-              </div>
-            </div>
+            <header className="consultation-block__header">
+              <span className="consultation-eyebrow">
+                SCHEDULE A CONSULTATION
+              </span>
+              <h2 className="consultation-block__title">Get a Free Quote</h2>
+              <p className="consultation-block__subhead">
+                Mobile service throughout the Phoenix valley — by appointment.
+              </p>
+            </header>
+            <QuoteWizard />
           </div>
         </section>
         <div className="home-container2">
