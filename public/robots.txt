@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://creative-elliptical-wasp-mso9gs.teleporthq.site/sitemap.xml
