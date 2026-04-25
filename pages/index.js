@@ -27,8 +27,8 @@ const Home = (props) => {
         <section className="hero-signature">
           <div className="hero-signature__media">
             <img
-              alt="Luxury bathroom with marble shower walls and freestanding tub"
-              src="https://images.pexels.com/photos/16249147/pexels-photo-16249147.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+              alt="Luxury marble shower with brushed gold fixtures by Ramirez Tile"
+              src="/gallery/21.jpg"
               className="hero-signature__image"
             />
           </div>
@@ -83,6 +83,19 @@ const Home = (props) => {
             </a>
           </div>
         </section>
+        <section className="gallery-promo">
+          <a href="/gallery" className="gallery-promo__link">
+            <div className="gallery-promo__inner">
+              <span className="gallery-promo__eyebrow">PORTFOLIO</span>
+              <span className="gallery-promo__label">
+                Check out our gallery
+              </span>
+              <span className="gallery-promo__arrow" aria-hidden="true">
+                &rarr;
+              </span>
+            </div>
+          </a>
+        </section>
         <section className="about-legacy">
           <div className="about-legacy__container">
             <div className="about-legacy__grid">
@@ -93,25 +106,17 @@ const Home = (props) => {
                 </h2>
                 <div className="about-paragraphs">
                   <p className="about-body section-content">
-                    Ramirez Tile is a locally-owned tile installation company
-                    proudly serving homeowners throughout the Phoenix valley.
-                    With decades of hands-on experience, the Ramirez family
-                    brings precision, artistry, and personal service to every
-                    project — from a single backsplash to a full home remodel.
-                  </p>
-                  <p className="about-body section-content">
-                    We believe tile work is craftsmanship, not just
-                    construction. Every cut, every grout line, every layout
-                    decision matters. That&apos;s why our clients trust us to
-                    treat their homes like our own.
+                    Ramirez Tile is a locally-owned, family-run tile
+                    installation company serving the Phoenix valley with
+                    precision, artistry, and personal service.
                   </p>
                 </div>
               </div>
               <div className="about-legacy__visual">
                 <div className="about-legacy__image-box">
                   <img
-                    alt="The Ramirez family team"
-                    src="https://images.pexels.com/photos/6934233/pexels-photo-6934233.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    alt="Marble shower with brushed brass fixtures by Ramirez Tile"
+                    src="/gallery/26.jpg"
                     className="about-legacy__img"
                   />
                   <span className="about-legacy__caption">
@@ -149,8 +154,8 @@ const Home = (props) => {
                 </div>
                 <div className="service-row__image">
                   <img
-                    alt="Floor tile installation"
-                    src="https://images.pexels.com/photos/6587893/pexels-photo-6587893.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    alt="Wood-look plank floor tile installation"
+                    src="/gallery/13.jpg"
                     className="service-row__img"
                   />
                 </div>
@@ -172,8 +177,8 @@ const Home = (props) => {
                 </div>
                 <div className="service-row__image">
                   <img
-                    alt="Bathroom shower tile"
-                    src="https://images.pexels.com/photos/7546317/pexels-photo-7546317.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    alt="Subway tile shower with marble mosaic accent"
+                    src="/gallery/14.jpg"
                     className="service-row__img"
                   />
                 </div>
@@ -193,8 +198,8 @@ const Home = (props) => {
                 </div>
                 <div className="service-row__image">
                   <img
-                    alt="Kitchen backsplash tile"
-                    src="https://images.pexels.com/photos/29412579/pexels-photo-29412579.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    alt="Black gloss linear kitchen backsplash with stainless range"
+                    src="/gallery/04.jpg"
                     className="service-row__img"
                   />
                 </div>
@@ -202,13 +207,14 @@ const Home = (props) => {
               <div className="service-row--reverse service-row">
                 <div className="service-row__text">
                   <h3 className="service-row__title">
-                    Outdoor, Pool &amp; Patio Tile
+                    Outdoor Tile Services
                   </h3>
                   <p className="section-content service-row__body">
-                    Pool waterlines, patios, outdoor kitchens, and BBQ surrounds
-                    — built for the Arizona climate.
+                    Patios, exterior walls, outdoor kitchens, and entryways —
+                    built with stone and porcelain that stand up to the Arizona
+                    climate.
                   </p>
-                  <a href="/services/outdoor-pool">
+                  <a href="/services/outdoor">
                     <div className="btn btn-primary btn-sm">
                       <span>LEARN MORE</span>
                     </div>
@@ -216,8 +222,8 @@ const Home = (props) => {
                 </div>
                 <div className="service-row__image">
                   <img
-                    alt="Outdoor pool tile"
-                    src="https://images.pexels.com/photos/10827343/pexels-photo-10827343.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    alt="Slate-tiled outdoor wall with travertine patio"
+                    src="/gallery/27.jpg"
                     className="service-row__img"
                   />
                 </div>
@@ -437,8 +443,8 @@ const Home = (props) => {
             <div className="consultation-block__grid">
               <div className="consultation-block__visual">
                 <img
-                  alt="Walk-in shower detail"
-                  src="https://images.pexels.com/photos/7546284/pexels-photo-7546284.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  alt="Subway tile shower with marble bench by Ramirez Tile"
+                  src="/gallery/15.jpg"
                   className="consultation-block__img"
                 />
               </div>
