@@ -97,25 +97,6 @@ const Home = (props) => {
             </div>
           </a>
         </section>
-        <section id="about" className="about-legacy">
-          <div className="about-legacy__container">
-            <div className="about-legacy__grid">
-              <div className="about-legacy__text">
-                <span className="about-eyebrow">ABOUT US</span>
-                <h2 className="section-title about-title">
-                  A Family Legacy in Tile.
-                </h2>
-                <div className="about-paragraphs">
-                  <p className="about-body section-content">
-                    Ramirez Tile is a locally-owned, family-run tile
-                    installation company serving the Phoenix valley with
-                    precision, artistry, and personal service.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section id="services" className="services-stacked">
           <div className="services-stacked__container">
             <div className="services-stacked__header">

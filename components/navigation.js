@@ -62,13 +62,6 @@ const Navigation = (props) => {
                   </a>
                 </li>
                 <li>
-                  <a href="/#about">
-                    <div className="navigation-link">
-                      <span>About</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
                   <a href="/#reviews">
                     <div className="navigation-link">
                       <span>Reviews</span>
@@ -186,13 +179,6 @@ const Navigation = (props) => {
                 <a href="/gallery">
                   <div className="navigation-mobile-link">
                     <span>Gallery</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="/#about">
-                  <div className="navigation-mobile-link">
-                    <span>About</span>
                   </div>
                 </a>
               </li>
