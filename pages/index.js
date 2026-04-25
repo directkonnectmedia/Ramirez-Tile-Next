@@ -27,8 +27,8 @@ const Home = (props) => {
         <section className="hero-signature">
           <div className="hero-signature__media">
             <img
-              alt="Luxury marble shower with brushed gold fixtures by Ramirez Tile"
-              src="/gallery/21.jpg"
+              alt="Black gloss linear kitchen backsplash with stainless range"
+              src="/gallery/04.jpg"
               className="hero-signature__image"
             />
           </div>
@@ -171,8 +171,8 @@ const Home = (props) => {
                 </div>
                 <div className="service-row__image">
                   <img
-                    alt="Black gloss linear kitchen backsplash with stainless range"
-                    src="/gallery/04.jpg"
+                    alt="Walnut kitchen with white herringbone backsplash"
+                    src="/gallery/05.jpg"
                     className="service-row__img"
                   />
                 </div>
