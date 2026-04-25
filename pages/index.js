@@ -112,18 +112,6 @@ const Home = (props) => {
                   </p>
                 </div>
               </div>
-              <div className="about-legacy__visual">
-                <div className="about-legacy__image-box">
-                  <img
-                    alt="Marble shower with brushed brass fixtures by Ramirez Tile"
-                    src="/gallery/26.jpg"
-                    className="about-legacy__img"
-                  />
-                  <span className="about-legacy__caption">
-                    Ivan Ramirez, Founder
-                  </span>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -146,11 +134,6 @@ const Home = (props) => {
                     floors that hold up to Phoenix life and look beautiful doing
                     it.
                   </p>
-                  <a href="/services/floor-tile">
-                    <div className="btn btn-primary btn-sm">
-                      <span>LEARN MORE</span>
-                    </div>
-                  </a>
                 </div>
                 <div className="service-row__image">
                   <img
@@ -169,11 +152,6 @@ const Home = (props) => {
                     Custom shower surrounds, niches, benches, and bathroom
                     floors — built waterproof, finished beautifully.
                   </p>
-                  <a href="/services/bathrooms-showers">
-                    <div className="btn btn-primary btn-sm">
-                      <span>LEARN MORE</span>
-                    </div>
-                  </a>
                 </div>
                 <div className="service-row__image">
                   <img
@@ -190,11 +168,6 @@ const Home = (props) => {
                     Subway, mosaic, marble, or hand-painted tile — backsplashes
                     that become the focal point of the kitchen.
                   </p>
-                  <a href="/services/kitchen-backsplashes">
-                    <div className="btn btn-primary btn-sm">
-                      <span>LEARN MORE</span>
-                    </div>
-                  </a>
                 </div>
                 <div className="service-row__image">
                   <img
@@ -214,11 +187,6 @@ const Home = (props) => {
                     built with stone and porcelain that stand up to the Arizona
                     climate.
                   </p>
-                  <a href="/services/outdoor">
-                    <div className="btn btn-primary btn-sm">
-                      <span>LEARN MORE</span>
-                    </div>
-                  </a>
                 </div>
                 <div className="service-row__image">
                   <img
