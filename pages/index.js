@@ -96,7 +96,7 @@ const Home = (props) => {
             </div>
           </a>
         </section>
-        <section className="about-legacy">
+        <section id="about" className="about-legacy">
           <div className="about-legacy__container">
             <div className="about-legacy__grid">
               <div className="about-legacy__text">
@@ -115,7 +115,7 @@ const Home = (props) => {
             </div>
           </div>
         </section>
-        <section className="services-stacked">
+        <section id="services" className="services-stacked">
           <div className="services-stacked__container">
             <div className="services-stacked__header">
               <span className="services-eyebrow">
@@ -199,7 +199,7 @@ const Home = (props) => {
             </div>
           </div>
         </section>
-        <section className="reviews-testimonials">
+        <section id="reviews" className="reviews-testimonials">
           <div className="reviews-testimonials__container">
             <div className="reviews-testimonials__header">
               <span className="reviews-eyebrow">WHAT OUR CLIENTS SAY</span>
@@ -479,37 +479,15 @@ const Home = (props) => {
             <Script
               html={`<script defer data-name="ramirez-tile-animations">
 (function(){
-  // Intersection Observer for scroll-triggered fade-in and rise
-  const observerOptions = {
-    threshold: 0.2,
-  }
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = "1"
-        entry.target.style.transform = "translateY(0)"
-      }
-    })
-  }, observerOptions)
-
-  // Apply initial styles and observe all sections
-  document.querySelectorAll("section").forEach((section) => {
-    section.style.opacity = "0"
-    section.style.transform = "translateY(24px)"
-    section.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out"
-    observer.observe(section)
-  })
-
   // Smooth scroll for internal links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
-      e.preventDefault()
-      const target = document.querySelector(this.getAttribute("href"))
+      const href = this.getAttribute("href")
+      if (!href || href === "#") return
+      const target = document.querySelector(href)
       if (target) {
-        target.scrollIntoView({
-          behavior: "smooth",
-        })
+        e.preventDefault()
+        target.scrollIntoView({ behavior: "smooth" })
       }
     })
   })

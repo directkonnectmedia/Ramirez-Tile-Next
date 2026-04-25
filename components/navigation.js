@@ -9,7 +9,7 @@ const Navigation = (props) => {
       <div className="navigation-container1">
         <nav className="navigation-wrapper">
           <div className="navigation-container">
-            <a href="Homepage">
+            <a href="/">
               <div
                 aria-label="Ramirez Tile Home"
                 className="navigation-logo-link"
@@ -41,72 +41,42 @@ const Navigation = (props) => {
             <div className="navigation-desktop-menu">
               <ul className="navigation-links-list">
                 <li>
-                  <a href="Homepage">
+                  <a href="/">
                     <div className="is-active navigation-link">
                       <span>Home</span>
                     </div>
                   </a>
                 </li>
-                <li className="navigation-dropdown-trigger">
-                  <span className="navigation-link">
-                    <span>
-                      {' '}
-                      Services
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: ' ',
-                        }}
-                      />
-                    </span>
-                    <span className="navigation-thq-navigation-chevron-elm"></span>
-                  </span>
-                  <ul className="navigation-dropdown-menu">
-                    <li>
-                      <a href="Floor-Tile">
-                        <div className="navigation-dropdown-link">
-                          <span>Floor Tile</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="Bathroom-Showers">
-                        <div className="navigation-dropdown-link">
-                          <span>Bathroom &amp; Showers</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="Kitchen-Backsplashes">
-                        <div className="navigation-dropdown-link">
-                          <span>Kitchen Backsplashes</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="Outdoor-Pool">
-                        <div className="navigation-dropdown-link">
-                          <span>Outdoor &amp; Pool Tile</span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
+                <li>
+                  <a href="/#services">
+                    <div className="navigation-link">
+                      <span>Services</span>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <a href="About">
+                  <a href="/gallery">
+                    <div className="navigation-link">
+                      <span>Gallery</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/#about">
                     <div className="navigation-link">
                       <span>About</span>
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a href="Reviews">
+                  <a href="/#reviews">
                     <div className="navigation-link">
                       <span>Reviews</span>
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a href="Contact">
+                  <a href="/#contact">
                     <div className="navigation-link">
                       <span>Contact</span>
                     </div>
@@ -115,28 +85,7 @@ const Navigation = (props) => {
               </ul>
             </div>
             <div className="navigation-actions">
-              <a href="#">
-                <div
-                  aria-label="Follow us on Instagram"
-                  className="navigation-social-btn"
-                >
-                  <svg
-                    fill="none"
-                    width="20"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="20"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"></path>
-                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0m7.5-4.5v.01"></path>
-                  </svg>
-                </div>
-              </a>
-              <a href="Contact">
+              <a href="/#contact">
                 <div className="btn btn-primary navigation-cta-desktop">
                   <span>Get a Quote</span>
                 </div>
@@ -166,7 +115,7 @@ const Navigation = (props) => {
         </nav>
         <div id="navigationMobileOverlay" className="navigation-mobile-overlay">
           <div className="navigation-mobile-header">
-            <a href="Homepage">
+            <a href="/">
               <div
                 aria-label="Ramirez Tile Home"
                 className="navigation-logo-link"
@@ -220,35 +169,42 @@ const Navigation = (props) => {
           <div className="navigation-mobile-content">
             <ul className="navigation-mobile-links">
               <li>
-                <a href="Homepage">
+                <a href="/">
                   <div className="navigation-mobile-link">
                     <span>Home</span>
                   </div>
                 </a>
               </li>
               <li>
-                <a href="Services">
+                <a href="/#services">
                   <div className="navigation-mobile-link">
                     <span>Services</span>
                   </div>
                 </a>
               </li>
               <li>
-                <a href="About">
+                <a href="/gallery">
+                  <div className="navigation-mobile-link">
+                    <span>Gallery</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/#about">
                   <div className="navigation-mobile-link">
                     <span>About</span>
                   </div>
                 </a>
               </li>
               <li>
-                <a href="Reviews">
+                <a href="/#reviews">
                   <div className="navigation-mobile-link">
                     <span>Reviews</span>
                   </div>
                 </a>
               </li>
               <li>
-                <a href="Contact">
+                <a href="/#contact">
                   <div className="navigation-mobile-link">
                     <span>Contact</span>
                   </div>
@@ -259,27 +215,6 @@ const Navigation = (props) => {
               <a href="tel:+16024763358">
                 <div className="navigation-mobile-phone">
                   <span>602-476-3358</span>
-                </div>
-              </a>
-              <a href="#">
-                <div
-                  aria-label="Follow us on Instagram"
-                  className="is-large navigation-social-btn"
-                >
-                  <svg
-                    fill="none"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"></path>
-                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0m7.5-4.5v.01"></path>
-                  </svg>
                 </div>
               </a>
             </div>
@@ -343,16 +278,6 @@ const Navigation = (props) => {
         {`
           .navigation-container1 {
             display: contents;
-          }
-          .navigation-thq-navigation-chevron-elm {
-            width: 8px;
-            height: 8px;
-            display: inline-block;
-            transform: rotate(45deg) translateY(-2px);
-            transition: transform 0.2s ease;
-            margin-left: 4px;
-            border-right: 1.5px solid var(--color-on-surface);
-            border-bottom: 1.5px solid var(--color-on-surface);
           }
           .navigation-container2 {
             display: none;

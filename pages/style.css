@@ -16,9 +16,9 @@
   --color-neutral: #f2ebe0;
   --color-outline: #c9a24b;
   --color-overlay: color-mix(in oklab, #000000 40%, transparent);
-  --color-primary: #4a2c1a;
+  --color-primary: #6e4a32;
   --color-surface: #e4d4c5;
-  --color-tile-gray: #bfbab3;
+  --color-tile-gray: #d8d4cf;
   --divider-value: 1px solid outline;
   --font-size-2xl: clamp(1.75rem, 1.6rem + 0.9vw, 2rem);
   --font-size-3xl: clamp(2.25rem, 2rem + 1.4vw, 2.5rem);
@@ -699,7 +699,8 @@
 }
  
 .hero-subtitle {
-  opacity: 0.85;
+  color: #ffffff;
+  opacity: 1;
   font-size: var(--font-size-lg);
   font-style: var(--font-style-subheading);
   font-family: var(--font-family-body);
@@ -1166,8 +1167,7 @@
  
 .navigation-wrapper.is-scrolled {
   height: 72px;
-  backdrop-filter: blur(12px);
-  background-color: color-mix(in srgb, var(--color-surface) 90%, transparent);
+  background-color: #ffffff;
 }
  
 .navigation-brand-name.is-white {
@@ -1696,7 +1696,7 @@
  
 .transform-cta__content {
   gap: 24px;
-  color: var(--color-surface);
+  color: #ffffff;
   display: flex;
   z-index: 3;
   position: relative;
@@ -1704,14 +1704,15 @@
   align-items: center;
   flex-direction: column;
 }
- 
+
 .transform-cta__title {
-  color: var(--color-surface);
+  color: #ffffff;
   font-size: 56px;
 }
- 
+
 .transform-cta__subline {
-  opacity: 0.9;
+  color: #ffffff;
+  opacity: 1;
   max-width: 520px;
 }
  
@@ -1765,7 +1766,8 @@
 }
  
 .consultation-card__subhead {
-  opacity: 0.9;
+  color: #ffffff;
+  opacity: 1;
   margin-bottom: 20px;
 }
  
