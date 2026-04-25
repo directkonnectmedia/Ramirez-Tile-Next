@@ -28,8 +28,8 @@ const Home = (props) => {
         <section className="hero-signature">
           <div className="hero-signature__media">
             <img
-              alt="Black gloss linear kitchen backsplash with stainless range"
-              src="/gallery/04.jpg"
+              alt="Modern farmhouse kitchen with hex floor tile, subway backsplash, and warm wood cabinets"
+              src="/gallery/hero-feature.jpg"
               className="hero-signature__image"
             />
           </div>
@@ -119,8 +119,8 @@ const Home = (props) => {
                 </div>
                 <div className="service-row__image">
                   <img
-                    alt="Wood-look plank floor tile installation"
-                    src="/gallery/13.jpg"
+                    alt="Marble entryway floor with walnut diamond inlays"
+                    src="/gallery/svc-floor.jpg"
                     className="service-row__img"
                   />
                 </div>
@@ -137,8 +137,8 @@ const Home = (props) => {
                 </div>
                 <div className="service-row__image">
                   <img
-                    alt="Subway tile shower with marble mosaic accent"
-                    src="/gallery/14.jpg"
+                    alt="Marble shower with green penny mosaic floor and brushed gold fixtures"
+                    src="/gallery/svc-bathroom.jpg"
                     className="service-row__img"
                   />
                 </div>
@@ -153,8 +153,8 @@ const Home = (props) => {
                 </div>
                 <div className="service-row__image">
                   <img
-                    alt="Walnut kitchen with white herringbone backsplash"
-                    src="/gallery/05.jpg"
+                    alt="Walnut kitchen with peach watercolor vertical subway backsplash and brass faucet"
+                    src="/gallery/svc-kitchen.jpg"
                     className="service-row__img"
                   />
                 </div>
@@ -172,8 +172,8 @@ const Home = (props) => {
                 </div>
                 <div className="service-row__image">
                   <img
-                    alt="Slate-tiled outdoor wall with travertine patio"
-                    src="/gallery/27.jpg"
+                    alt="Gray porcelain patio with planters and sun loungers"
+                    src="/gallery/svc-outdoor.jpg"
                     className="service-row__img"
                   />
                 </div>
