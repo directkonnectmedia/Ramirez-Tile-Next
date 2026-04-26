@@ -8,11 +8,18 @@ const TIMELINES = [
   { value: 'browsing', label: 'Just browsing' },
 ]
 
+const PROJECT_SIZES = [
+  { value: 'small', label: 'Small', meta: 'Under 150 sq ft' },
+  { value: 'medium', label: 'Medium', meta: '150 – 400 sq ft' },
+  { value: 'large', label: 'Large', meta: '400 – 800 sq ft' },
+  { value: 'xl', label: 'Extra Large', meta: '800 sq ft and over' },
+]
+
 const STEP_LABELS = ['Timeline', 'Project', 'Contact']
 
 const initialData = {
   timeline: '',
-  sqft: '',
+  size: '',
   description: '',
   name: '',
   phone: '',
@@ -35,8 +42,8 @@ const QuoteWizard = () => {
       setError('Please pick a timeline.')
       return
     }
-    if (step === 2 && !data.sqft.trim()) {
-      setError('Enter a square footage, or type "I don’t know".')
+    if (step === 2 && !data.size) {
+      setError('Pick a project size.')
       return
     }
     setStep((s) => s + 1)
@@ -136,18 +143,34 @@ const QuoteWizard = () => {
             <legend className="wizard__legend">
               Tell us about your project
             </legend>
+            <div className="wizard__field">
+              <span className="wizard__label">Project size</span>
+              <div
+                className="wizard__options wizard__options--cols-4"
+                role="radiogroup"
+              >
+                {PROJECT_SIZES.map((opt) => {
+                  const active = data.size === opt.value
+                  return (
+                    <button
+                      type="button"
+                      role="radio"
+                      aria-checked={active}
+                      key={opt.value}
+                      className={`wizard__option${active ? ' is-active' : ''}`}
+                      onClick={() =>
+                        setData((prev) => ({ ...prev, size: opt.value }))
+                      }
+                    >
+                      <span className="wizard__option-label">{opt.label}</span>
+                      <span className="wizard__option-meta">{opt.meta}</span>
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
             <label className="wizard__field">
-              <span className="wizard__label">Approximate square footage</span>
-              <input
-                type="text"
-                className="wizard__input"
-                placeholder='e.g. 200 (or "I don&rsquo;t know")'
-                value={data.sqft}
-                onChange={update('sqft')}
-              />
-            </label>
-            <label className="wizard__field">
-              <span className="wizard__label">Brief description (optional)</span>
+              <span className="wizard__label">Additional details (optional)</span>
               <textarea
                 className="wizard__textarea"
                 rows={3}
