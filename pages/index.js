@@ -28,7 +28,7 @@ const Home = (props) => {
         <section className="hero-signature">
           <div className="hero-signature__media">
             <img
-              alt="Modern farmhouse kitchen with hex floor tile, subway backsplash, and warm wood cabinets"
+              alt="Rustic kitchen with walnut cabinets, exposed wood beams, and beige subway backsplash"
               src="/gallery/hero-feature.jpg"
               className="hero-signature__image"
             />
