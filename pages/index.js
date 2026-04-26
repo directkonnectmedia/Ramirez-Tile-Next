@@ -28,8 +28,8 @@ const Home = (props) => {
         <section className="hero-signature">
           <div className="hero-signature__media">
             <img
-              alt="Rustic kitchen with walnut cabinets, exposed wood beams, and beige subway backsplash"
-              src="/gallery/hero-feature.jpg"
+              alt="Rustic kitchen with walnut cabinets, exposed wood beams, marble island, and beige subway backsplash"
+              src="/gallery/hero-feature.png"
               className="hero-signature__image"
             />
           </div>
