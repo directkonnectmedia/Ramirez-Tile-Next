@@ -168,6 +168,17 @@ const QuoteWizard = () => {
                   )
                 })}
               </div>
+              <button
+                type="button"
+                role="radio"
+                aria-checked={data.size === 'unsure'}
+                className={`wizard__unsure${data.size === 'unsure' ? ' is-active' : ''}`}
+                onClick={() =>
+                  setData((prev) => ({ ...prev, size: 'unsure' }))
+                }
+              >
+                I&rsquo;m not sure
+              </button>
             </div>
             <label className="wizard__field">
               <span className="wizard__label">Additional details (optional)</span>

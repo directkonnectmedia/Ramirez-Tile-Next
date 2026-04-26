@@ -2512,6 +2512,32 @@
   letter-spacing: 0.2px;
 }
 
+.wizard__unsure {
+  align-self: center;
+  margin-top: 12px;
+  background: transparent;
+  border: 1.5px dashed color-mix(in srgb, var(--color-primary) 28%, transparent);
+  color: var(--color-primary);
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-family: var(--font-family-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.wizard__unsure:hover {
+  border-color: var(--color-accent);
+}
+
+.wizard__unsure.is-active {
+  border-style: solid;
+  border-color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 14%, #ffffff);
+}
+
 .wizard__field {
   display: flex;
   flex-direction: column;
