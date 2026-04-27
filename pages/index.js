@@ -119,7 +119,7 @@ const Home = (props) => {
                 </div>
                 <div className="service-row__image">
                   <img
-                    alt="Marble entryway floor with walnut diamond inlays"
+                    alt="Modern dining and living area with glossy white porcelain tile flooring"
                     src="/gallery/svc-floor.jpg"
                     className="service-row__img"
                   />
